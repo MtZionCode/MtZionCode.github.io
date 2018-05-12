@@ -8,6 +8,9 @@
 
 .heading {
   background-color: #0099ff;
+  <!--border-radius: 15px;-->
+  width: 800px;
+  height: 100px;
   
 }
 
