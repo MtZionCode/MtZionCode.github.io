@@ -15,6 +15,18 @@
   
 }
 
+#top{
+  float: left;
+}
+
+#bottom{
+  float: right;
+}
+
+.img-responsive{
+ border-radius: 25px; 
+}
+
 h1 {
   color: #ffffff
 }
