@@ -2,7 +2,7 @@
   /**border: 1px solid #000000;**/
   height: 100%;
   width: 800px;
-    margin: auto;
+  margin: auto;
   
 }
 
@@ -129,28 +129,27 @@ figure {
 }
 
 
-.Faces.Wheels figure{
+.portfolio.pics figure{
 overflow: hidden;
 height: 500px;
 }
 
 
-.Faces.Wheels figure img{
+.portfolio.pics figure img{
 width: 100%
 float: left;
 opacity: 0.65;
 }
-
-.Faces.Wheels figure{
+.portfolio.pics figure{
 position: relative;
 width: 100%;
 margin: 0;
 left: 0;
-animation: 20s rims infinite;
+animation: 20s portfolio infinite;
 }
 
 
-@keyframes rims {
+@keyframes portfolio {
 	0%{
 		left: -100%;     
     }
