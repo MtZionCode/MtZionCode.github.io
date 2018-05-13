@@ -1,4 +1,8 @@
+
+
 .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
   /**border: 1px solid #000000;**/
   height: 100%;
   width: 800px;
@@ -8,7 +12,8 @@
 
 .heading {
   background-color: #0099ff;
-  <!--border-radius: 15px;-->
+  border-radius: 20px;
+  width: auto;
   
 }
 
@@ -116,7 +121,7 @@ color: #ffffff
 }
 
 
-div.Faces.Wheels {
+div.Portfolio.Pics {
   width: 3000px;
   position: absolute;
   overflow: hidden;
@@ -129,18 +134,19 @@ figure {
 }
 
 
-.portfolio.pics figure{
+.Portfolio.Pics figure{
 overflow: hidden;
 height: 500px;
 }
 
 
-.portfolio.pics figure img{
+.Portfolio.Pics figure img{
 width: 100%
 float: left;
 opacity: 0.65;
 }
-.portfolio.pics figure{
+
+.Portfolio.Pics figure{
 position: relative;
 width: 100%;
 margin: 0;
