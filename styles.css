@@ -1,8 +1,6 @@
 
 
 .container {
-  margin-top: 20px;
-  margin-bottom: 20px;
   /**border: 1px solid #000000;**/
   height: 100%;
   width: 800px;
@@ -72,11 +70,13 @@ color: #ffffff
 	top:1px;
 }
 
+<!--
 @media(min-width: 200px) {
     .myButton {
         margin-bottom: 15px;
     }
 }
+-->
 
 .img-responsive2 {
   opacity: .65;
