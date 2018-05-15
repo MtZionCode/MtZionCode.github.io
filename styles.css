@@ -1,18 +1,36 @@
 
 
-.container {
-  /**border: 1px solid #000000;**/
-  height: 100%;
-  width: 800px;
+.container-fluid {
   margin: auto;
-  
+  border: 2px solid red;
+  height: 100%;
+  width: auto; 
+  text-align: center;
 }
 
-.heading {
+#About-Me-holder{
   background-color: #0099ff;
+  color: white;
   border-radius: 20px;
+  height: 200px;
   width: auto;
-  
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px: 
+  border: 1px solid black;
+}
+
+.About-Me{
+  text-align: center;
+  border: 1px solid blue;
+}
+
+p{
+  text-transform: uppercase;
+}
+
+#Connect{
+  border: 1px solid black;
 }
 
 #top{
