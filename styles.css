@@ -395,6 +395,10 @@ body {
 
 
 @media only screen and (max-width: 500px) {
+	
+    div h2{
+    font-size: 2em;
+    } 
   
     #buttons{
     margin-top: 50px;
