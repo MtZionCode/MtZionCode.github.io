@@ -13,10 +13,16 @@
   width: auto;  
 }
 
+div h2{
+  font-family: digital-7, sans-serif;
+  /*border: 3px solid red;*/
+}
+
+/*
 .col-md-12{
   
 }
-
+*/
 
 h1 {
   color: #ffffff
