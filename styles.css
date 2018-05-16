@@ -21,6 +21,11 @@ div h2{
   /*border: 3px solid red;*/
 }
 
+div h3{
+  /*border: 1px solid black;*/
+  margin-top: 25px;
+}
+
 /*
 .col-md-12{
   
