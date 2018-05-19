@@ -95,14 +95,8 @@ color: #ffffff
 
 .dropdown:hover .dropdown-content {
     display: block;
-  background-color
+  background-color: #f1f1f1;
 }
-
-/*.dropdown:hover .dropbtn {
-    background-color: 
-}*/
-
-
 
 .dropdown {
     position: relative;
