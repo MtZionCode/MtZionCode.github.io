@@ -92,9 +92,7 @@ color: #ffffff
   border: 1px dashed black;
 }
 
-.dropdown-content a:hover {
-   background-color: #00ffff;
-}
+.dropdown-content a:hover {background-color: #00ffff}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -103,8 +101,6 @@ color: #ffffff
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
-
-
 
 .dropdown {
     position: relative;
