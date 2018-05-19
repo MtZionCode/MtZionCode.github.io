@@ -9,8 +9,8 @@
 
 .About-Me {
   background-color: #0099ff;
-  
   border-radius: 20px;
+  box-shadow: inset 0px 5px 20px 0px #000;
   width: auto;  
 }
 
@@ -33,18 +33,6 @@ color: #ffffff
 }
 
 #top{
-  float: left;
-}
-
-#bottom{
-  float: right;
-}
-
-.img-responsive{
- border-radius: 25px; 
-}
-
-#top{
   padding-top: 8px;
   margin-left: 10px;
   float: left;
@@ -56,6 +44,18 @@ color: #ffffff
   padding-top: 8px;
 }
 
+.img-responsive{
+ border-radius: 25px; 
+}
+
+#top{
+  margin-top: 10px;
+}
+
+#bottom{
+  margin-bottom: 10px;
+}
+
 /*.col-md-4{
   border: 1px solid black;
 }
@@ -63,7 +63,6 @@ color: #ffffff
 
 .dropbtn {
     background-color: #4CAF50;
-    color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -96,11 +95,14 @@ color: #ffffff
 
 .dropdown:hover .dropdown-content {
     display: block;
+  background-color
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
+/*.dropdown:hover .dropbtn {
+    background-color: 
+}*/
+
+
 
 .dropdown {
     position: relative;
@@ -507,4 +509,9 @@ body {
   margin: 7px;
   }
   
+  #top,
+  #bottom
+  {
+    width: 250px;
+  }
 }
