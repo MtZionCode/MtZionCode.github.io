@@ -92,7 +92,9 @@ color: #ffffff
   border: 1px dashed black;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+   background-color: #00ffff;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
