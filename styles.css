@@ -314,11 +314,13 @@ h4{
 #contact-form button[type="submit"] {
    cursor:pointer;
    width:100%;
-   border:none;
+   border: none;
+    outline: none;
    background:#e17f3f;
    margin:0 0 5px;
    padding:10px;
    border-radius:5px;
+   box-shadow: 1px 3px 2px #444, inset 0px 0px 12px 0px #000;  
 }
 #contact-form button[type="submit"]:hover {
    background-color:#79bbff ;
