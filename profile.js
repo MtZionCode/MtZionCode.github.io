@@ -1,7 +1,8 @@
 //add two lights to "portfolio" button that operates based on status of animation
 
 //showcase is the div you click and figure is the element whose webkit-animation-play-state is getting changed:
-
+$(document).ready(function () {
+“use strict”;
   var showcase = document.querySelector("figure"); 
 
   $("showcase").mouseover(function(){ 
@@ -13,3 +14,4 @@
   $(".red").removeClass("glow-red");
   $(".green").addClass("glow-green");  
   });
+});
