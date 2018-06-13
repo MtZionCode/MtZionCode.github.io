@@ -6,7 +6,7 @@
   $(".showcase").mouseover(function(){ 
   $(".red").addClass("glow-red"); 
   $(".green").removeClass("glow-green"); }); 
-  showcase.addEventListener("mouseout", function(){ 
+  $(".showcase").mouseout(function(){ 
   $(".red").removeClass("glow-red");
   $(".green").addClass("glow-green");  
   });
