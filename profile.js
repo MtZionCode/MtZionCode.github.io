@@ -3,7 +3,7 @@
 //showcase is the div you click and figure is the element whose webkit-animation-play-state is getting changed:
 
   var showcase = document.querySelector("figure"); 
-  showcase.on("mouseover” function(){ 
+  showcase.on("mouseover”, function(){ 
   $(".red").addClass("glow-red"); 
   $(".green").removeClass("glow-green"); }); 
   showcase.addEventListener("mouseout", function(){ 
