@@ -4,12 +4,12 @@
 
   var showcase = document.querySelector("figure"); 
 
-  $(".showcase").mouseover(function(){ 
+  $("showcase").mouseover(function(){ 
   $(".red").addClass("glow-red"); 
   $(".green").removeClass("glow-green"); 
   }); 
 
-  $(".showcase").mouseout(function(){ 
+  $("showcase").mouseout(function(){ 
   $(".red").removeClass("glow-red");
   $(".green").addClass("glow-green");  
   });
