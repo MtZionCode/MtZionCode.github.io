@@ -238,12 +238,13 @@ float: left;
 opacity: 0.65;
 }
 
-.Portfolio.Pics figure{
+figure{
 position: relative;
 width: 100%;
 margin: 0;
 left: 0;
 animation: 20s portfolio infinite;
+cursor: pointer;
 }
 
 
@@ -261,6 +262,11 @@ animation: 20s portfolio infinite;
 		right:100%;     
 	}
 
+}
+
+figure:hover {
+    -webkit-animation-play-state:paused;
+    animation-play-state:paused;
 }
 
 .contact-holder{
