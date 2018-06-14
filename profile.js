@@ -2,7 +2,7 @@
 
 //showcase is the div you click and figure is the element whose webkit-animation-play-state is getting changed:
 $(document).ready(function () {
-"use strict"
+
 //part 1: add two lights to "portfolio" button that operates based on status of animation
 //part 2: make red light blink while mouse is over contents of "Portfolio" button drop-down menu
 
