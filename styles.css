@@ -556,7 +556,7 @@ body {
 
 
 /* Make form look nice on smaller screens */
-/*
+
 @media(min-width: 500px) {
     .myButton {
     margin-bottom: 15px;
@@ -591,3 +591,54 @@ body {
 }
 
 @media only screen and (max-width: 500px) { /* anything less than 500px (or *501px and up will be regular) */
+  
+  div h2{
+    font-size: 2em;
+  }  
+  
+    #buttons{
+    margin-top: 50px;
+   }
+  
+  .myButton
+  .dropbtn{
+    width: 100%;   
+  }
+
+  #portfolio{
+    /*border: 1px solid black;*/
+  }
+  
+   #contact-form{
+      left: 3%;
+      margin-right: 3%;
+      width: 88%;
+      margin-left: 0;
+      padding-left: 3%;
+      padding-right: 3%;
+   }
+  
+  .myButton {
+        margin-bottom: 15px;
+    }
+  
+  .social-media-icon-footer{
+  width:100%;
+  height: 100%;
+  }
+  
+  ul.soc li {
+  width: 100%;
+  }
+  
+  .socbutton{
+  /*border: 1px solid black;*/
+  margin: 7px;
+  }
+  
+  #top,
+  #bottom
+  {
+    width: 250px;
+  }
+}
