@@ -52,5 +52,23 @@ function stopBlinking() {
   isBlinking = false;
   element.show()
 }
+  
+  /*............................make robot hand blink................ */
+
+
+//hand-pointing image (add more innovation later)
+var element = $(".robot");
+var shown = true;
+setInterval(toggle, 800);
+
+function toggle() {
+    if(shown) {
+        element.css('opacity', 0);
+        shown = false;
+    } else {
+        element.css('opacity', 1);
+        shown = true;
+    }
+}
 
 });
