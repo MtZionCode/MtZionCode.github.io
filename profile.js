@@ -10,6 +10,15 @@ $(document).ready(function () {
 //part 1: add two lights to "portfolio" button that operates based on status of animation
 //part 2: make red light blink while mouse is over contents of "Portfolio" button drop-down menu
 
+//make green light blink (while slideshow is running)
+
+var myVar= setInterval(blink_greenLight, 100);
+function blink_greenLight() {
+  $('.glow-green').fadeOut(100);
+    $('.glow-green').fadeIn(100);
+}
+  
+  
 /*part 1*/
 
   var showcase = document.querySelector("figure"); 
