@@ -25,7 +25,7 @@ function blink_greenLight() {
 var showcase = document.querySelector("figure");
 showcase.addEventListener("mouseover", function() {
   $(".red").addClass("glow-red");
-  $(".green").removeClass("glow-green").removeClass('animate-flicker')
+  $(".green").removeClass("glow-green").removeClass('animate-flicker');
 });
 showcase.addEventListener("mouseout", function() {
   $(".red").removeClass("glow-red");
