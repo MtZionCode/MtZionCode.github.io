@@ -14,12 +14,6 @@ $(document).ready(function () {
   
 $(".green").addClass("animate-flicker");
   
-var myVar= setInterval(blink_greenLight, 100);
-function blink_greenLight() {
-  $('.glow-green').fadeOut(100);
-    $('.glow-green').fadeIn(100);
-}
-  
 //part B (of Part 1)  
 
 var showcase = document.querySelector("figure");
