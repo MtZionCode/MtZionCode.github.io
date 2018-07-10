@@ -29,7 +29,7 @@ showcase.addEventListener("mouseover", function() {
 });
 showcase.addEventListener("mouseout", function() {
   $(".red").removeClass("glow-red");
-  $(".green").addClass("glow-green").addClass('animate-flicker')
+  $(".green").addClass("glow-green").addClass('animate-flicker');
 });
 
 //Part 2
