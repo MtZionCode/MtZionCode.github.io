@@ -1,37 +1,39 @@
-//add two lights to "portfolio" button that operates based on status of animation
+//lOGIC:
+
+  //Part1: add two lights to "portfolio" button that operates based on status of animation - running or paused states
+    //part A: glowing green light flashes/blinks as long as slideshow is running, but glow and blinking goes off when slideshow is paused
+    //part B: red light glows when slideshow animation is paused from mouseover
+  //Part 2: make glowing red light flash rapidly when user mouseovers content of "Portfolio" button drop-down menu
 
 //showcase is the div you click and figure is the element whose webkit-animation-play-state is getting changed:
 $(document).ready(function () {
+
+
+
+//part A (of Part 1)
   
-  $(window).on('unload', function() {
-   $(window).scrollTop(0);
-});
-
-//part 1: add two lights to "portfolio" button that operates based on status of animation
-//part 2: make red light blink while mouse is over contents of "Portfolio" button drop-down menu
-
-//make green light blink (while slideshow is running)
-
+$(".green").addClass("animate-flicker");
+  
 var myVar= setInterval(blink_greenLight, 100);
 function blink_greenLight() {
   $('.glow-green').fadeOut(100);
     $('.glow-green').fadeIn(100);
 }
   
+//part B (of Part 1)  
+
+var showcase = document.querySelector("figure");
+showcase.addEventListener("mouseover", function() {
+  $(".red").addClass("glow-red");
+  $(".green").removeClass("glow-green").removeClass('animate-flicker')
+});
+showcase.addEventListener("mouseout", function() {
+  $(".red").removeClass("glow-red");
+  $(".green").addClass("glow-green").addClass('animate-flicker')
+});
+
+//Part 2
   
-/*part 1*/
-
-  var showcase = document.querySelector("figure"); 
-  showcase.addEventListener("mouseover", function(){ 
-  $(".red").addClass("glow-red"); 
-  $(".green").removeClass("glow-green"); }); 
-  showcase.addEventListener("mouseout", function(){ 
-  $(".red").removeClass("glow-red"); 
-  $(".green").addClass("glow-green");  
-  });
-
-/*part 2*/
-
 var dropdown = document.querySelector('.dropdown-content');
 dropdown.addEventListener('mouseenter', blinking);
 dropdown.addEventListener('mouseleave', stopBlinking);
