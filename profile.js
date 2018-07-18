@@ -29,7 +29,6 @@ $(document).ready(function () {
 
 $(".green").addClass("animate-flicker");
 $('.green-light-two').addClass("animate-flicker"); 
-
   
 //part B (of Part 1)  
 
