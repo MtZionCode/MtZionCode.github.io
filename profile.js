@@ -12,7 +12,23 @@ $(document).ready(function () {
 
 //part A (of Part 1)
   
+ var showcase = document.querySelector("figure"); 
+  showcase.addEventListener("mouseover", function(){ 
+  $(".red").addClass("glow-red"); //red light glows
+  $(".green").removeClass("glow-green"); //green light stops glowing
+    $('.red-light-two').addClass('glow-red');
+    $('.green-light-two').removeClass('glow-green');
+  }); 
+  showcase.addEventListener("mouseout", function(){ 
+  $(".red").removeClass("glow-red"); //red light no longer glows
+  $(".green").addClass("glow-green"); // green light returns to glowing
+    $('.red-light-two').removeClass('glow-red');
+    $('.green-light-two').addClass('glow-green');
+  });
+
+
 $(".green").addClass("animate-flicker");
+$('.green-light-two').addClass("animate-flicker"); 
   
 //part B (of Part 1)  
 
@@ -20,10 +36,12 @@ var showcase = document.querySelector("figure");
 showcase.addEventListener("mouseover", function() {
   $(".red").addClass("glow-red");
   $(".green").removeClass("glow-green").removeClass('animate-flicker');
+  $('.green-light-two').removeClass("glow-green").removeClass("animate-flicker");
 });
 showcase.addEventListener("mouseout", function() {
   $(".red").removeClass("glow-red");
   $(".green").addClass("glow-green").addClass('animate-flicker');
+  $('.green-light-two').addClass("glow-green").addClass("animate-flicker");
 });
 
 //Part 2
