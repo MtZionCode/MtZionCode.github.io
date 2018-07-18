@@ -85,5 +85,59 @@ function toggle() {
         shown = true;
     }
 }
+  
+//.......when "Portfolio" button is pressed, page scrolls to center image and light-box appears/..................
+
+ $("#tell-state").click(function(){
+        alert("Here's something new.");
+   $(".drop-light").show();
+    });
+
+  //.......hides light-box after scrolling up from its display area
+
+function getDocHeight() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    )
+  
+}
+
+var winheight, docheight, trackLength, throttlescroll
+
+function getmeasurements(){
+	winheight= window.innerHeight || (document.documentElement || document.body).clientHeight
+	docheight = getDocHeight()
+	trackLength = docheight - winheight
+}
+
+function amountscrolled(){
+	var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop
+	var pctScrolled = Math.floor(scrollTop/trackLength * 100) // gets percentage scrolled (ie: 80 or NaN if tracklength == 0)
+	/*output.innerHTML = pctScrolled + '% scrolled'*/
+  
+ /* after drop-light becomes visible via pressing the "Portfolio button", now when you scroll up from there, it disappears, leaving only the blinking lights on the "Portfolio" button*/
+  if(pctScrolled <= 35){
+    $(".drop-light").hide();
+  }else{
+    console.log('The drop-down showed');
+  }
+}
+
+getmeasurements()
+
+window.addEventListener("resize", function(){
+	getmeasurements()
+}, false)
+
+window.addEventListener("scroll", function(){
+	clearTimeout(throttlescroll)
+		throttlescroll = setTimeout(function(){ // throttle code inside scroll to once every 50 milliseconds
+		amountscrolled()
+	}, 50)
+}, false)
+
 
 });
