@@ -42,7 +42,6 @@ $(document).ready(function () {
   
   // start the text animation
   StartTextAnimation(0);
-});
 
 //lOGIC:
 
