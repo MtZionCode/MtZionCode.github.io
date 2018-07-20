@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
-
+	
+document.addEventListener('DOMContentLoaded',function(event){
 
   // array with texts to type in typewriter
   var dataText = [ "Devoted to the design of experiences with code."];
@@ -42,7 +43,8 @@ $(document).ready(function () {
   
   // start the text animation
   StartTextAnimation(0);
-
+  });
+	
 //lOGIC:
 
   //Part1: add two lights to "portfolio" button that operates based on status of animation - running or paused states
