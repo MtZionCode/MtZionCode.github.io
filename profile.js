@@ -1,7 +1,6 @@
 
 $(document).ready(function () {
-
-
+	
   // array with texts to type in typewriter
   var dataText = [ "Devoted to the design of experiences with code."];
   
@@ -39,7 +38,7 @@ $(document).ready(function () {
        StartTextAnimation(i + 1);
      });
     }
-  
+  }
   // start the text animation
   StartTextAnimation(0);
 
