@@ -2,7 +2,6 @@
 $(document).ready(function () {
 	
 document.addEventListener('DOMContentLoaded',function(event){
-
   // array with texts to type in typewriter
   var dataText = [ "Devoted to the design of experiences with code."];
   
@@ -40,10 +39,10 @@ document.addEventListener('DOMContentLoaded',function(event){
        StartTextAnimation(i + 1);
      });
     }
-  
+  }
   // start the text animation
   StartTextAnimation(0);
-  });
+});
 	
 //lOGIC:
 
