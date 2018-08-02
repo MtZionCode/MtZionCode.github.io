@@ -358,33 +358,159 @@ figure:hover {
     animation-play-state:paused;
 }
 
-.contact-holder{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: auto;
+#last-section{
+ /*border: 1px solid red;*/
 }
 
-
-#contact-form {
-  background-color: white;
-  text-align: center;
+.videos-section{
+/*width:300px;*/
+  height: auto;
+  background-color: #0099fe;
+  margin: auto;
   position: relative;
-  height: auto;
-  
+  padding: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top:15px; 
+}
+
+.videos-section: before{
+  position: absolute;
+  top: 0; 
+  right:0;
+  bottom: 80%;
+  left: 0;    
+  text-align: center;    
+  background: #0099fe;
 }
 
 
+#video{ /*title bar*/
+  line-height: .5em;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 30px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #bfbdbd;
+}
 
 
-* {
-   box-sizing:border-box;
-   -webkit-box-sizing:border-box;
-   -moz-box-sizing:border-box;
-   -webkit-font-smoothing:antialiased;
-   -moz-font-smoothing:antialiased;
-   -o-font-smoothing:antialiased;
-   font-smoothing:antialiased;
-   text-rendering:optimizeLegibility;
+.videos-box{
+  margin-top: -17px;
+  /*margin-left: -15px;*/
+  /*margin-right: -15px;*/
+   height: auto;
+  padding: 15px;
+  border: 1px solid #0099fe;
+  margin-bottom: 15px;
+   border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #5b5b5b;
+  background-image: url('https://s15.postimg.cc/6gp19dwl7/Fim_Reel.jpg');/*'https://s25.postimg.cc/uf3qrj8u7/Coming_Soon.jpg'*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px, 500px;
+  margin-bottom: 15px;
+}
+
+
+.skills-section{
+  height: auto;
+  background-color: #0099fe;
+  margin: auto;
+  position: relative;
+  padding: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top:15px;  
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.fck {
+  color: red;
+  font-size: 20px;
+  margin-left: 20%;
+}
+
+.parent {
+  font-family: 'Roboto';
+  counter-reset: my-counter;
+  margin: 10px auto;
+  margin-left: 30%
+}
+
+.item {
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.item:before {
+  color: white;
+  background-color: #000;
+  border-radius: 50%;
+  counter-increment: my-counter;
+  content: counter(my-counter);
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  left: 0;
+  margin-right: 5px;
+  position: absolute;
+  text-align: center;
+  width: 20px;
+}
+
+.notification{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  left: 63%;
+  background-color: #ff0000; 
+}
+
+#number{
+  font-size: 1.5em;
+  line-height: 0;
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  color: white;
+}
+
+.skills-section:before{
+  position: absolute;
+  top: 0; 
+  right:0;
+  bottom: 80%;
+  left: 0;    
+  background: #0099fe;
+}
+
+#skills{
+  line-height: .5em;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 30px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #bfbdbd;
+}
+
+.skills-box{
+  height: auto;
+  padding: 15px;
+  border: 1px solid #0099fe;
+  margin-bottom: 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #5b5b5b;
+  text-align: left;
+  /*overflow-y: auto; 
+  height: 100px;*/
 }
 
 /* Contact Form Styles */
@@ -603,6 +729,93 @@ body {
 
 
 /* Make form look nice on smaller screens */
+
+
+@media(min-width: 990px){
+    .notification{
+      width: 25px;
+      height: 25px;
+      border-radius: 2px;
+      left: 70%;
+      }
+
+    #number{
+    font-size: 1em;
+    line-height: 1em;
+    margin-top: -10px;
+    left: 8px;
+    }
+  
+  .fck{
+    font-size: 1.125em;
+  }
+}
+
+/*the big screen*/
+
+@media(max-width: 992px) { 
+  
+    .videos-section {
+    width: 400px;
+    }
+  
+    .videos-box{
+    width: 400px;
+    }
+  
+    .skills-section {
+     width: 400px;
+    }  
+    
+    .skills-box {
+     width: 400px;
+    }  
+  
+    #skills{
+     line-height: .5em;
+      font-size: 1.85em;  
+    }
+}
+
+/*the smaller screen*/
+
+@media(min-width: 300px) and (max-width: 470px) { 
+  
+    .videos-section {
+     width: 300px;
+    }
+  
+    .videos-box{
+    width: 300px;
+    }
+  
+    .skills-section {
+     width: 300px;
+    }
+    
+    .skills-box {
+     width: 300px;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 400px){
+    
+    .videos-section {
+     width: 200px;
+    }
+  
+    .videos-box{
+    width: 200px;
+    }
+  
+    .skills-section {
+     width: 200px;
+    }
+    
+    .skills-box {
+     width: 200px;
+  }
+}
 
 @media(min-width: 500px) {
     .myButton {
