@@ -31,7 +31,7 @@ $(document).ready(function () {
         }, 20000);
      }
      // check if dataText[i] exists
-    if (i < dataText[i].length) {
+    if (i < dataText.length) {
       // text exists! start typewriter animation
      typeWriter(dataText[i], 0, function(){
        // after callback (and whole text has been animated), start next text
@@ -118,7 +118,7 @@ function stopBlinking() {
   var element = $(".red").removeClass("glow-red"); 
   clearInterval(interval)
   isBlinking = false;
-  element.show()
+  element.show();
 }
   
   /*............................make robot hand blink................ */
@@ -154,16 +154,16 @@ function getDocHeight() {
         D.body.scrollHeight, D.documentElement.scrollHeight,
         D.body.offsetHeight, D.documentElement.offsetHeight,
         D.body.clientHeight, D.documentElement.clientHeight
-    )
+    );
   
 }
 
-var winheight, docheight, trackLength, throttlescroll
+var winheight, docheight, trackLength, throttlescroll;
 
 function getmeasurements(){
 	winheight= window.innerHeight || (document.documentElement || document.body).clientHeight
-	docheight = getDocHeight()
-	trackLength = docheight - winheight
+	docheight = getDocHeight();
+	trackLength = docheight - winheight;
 }
 
 function amountscrolled(){
@@ -179,17 +179,17 @@ function amountscrolled(){
   }
 }
 
-getmeasurements()
+getmeasurements();
 
 window.addEventListener("resize", function(){
-	getmeasurements()
-}, false)
+	getmeasurements();
+}, false);
 
 window.addEventListener("scroll", function(){
-	clearTimeout(throttlescroll)
+	clearTimeout(throttlescroll);
 		throttlescroll = setTimeout(function(){ // throttle code inside scroll to once every 50 milliseconds
-		amountscrolled()
-	}, 50)
+		amountscrolled();
+	}, 50);
 }, false)
 
 
